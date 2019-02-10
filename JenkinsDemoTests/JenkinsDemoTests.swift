@@ -4,6 +4,6 @@ import XCTest
 class JenkinsDemoTests: XCTestCase {
 
     func testExample() {
-        
+        XCTAssertEqual(1, 1)
     }
 }

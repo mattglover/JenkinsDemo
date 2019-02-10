@@ -74,6 +74,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B29B48072210EB7B000060C0 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B2D227F41F6C555C003A6D67 /* Main.storyboard */,
+				B2D227F71F6C555C003A6D67 /* Assets.xcassets */,
+				B2D227F91F6C555C003A6D67 /* LaunchScreen.storyboard */,
+				B2D227FC1F6C555C003A6D67 /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		B29B48082210EB8D000060C0 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B2D227F01F6C555C003A6D67 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B29B48092210EB94000060C0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B2D227F21F6C555C003A6D67 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		B2D227E41F6C555C003A6D67 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +124,9 @@
 		B2D227EF1F6C555C003A6D67 /* JenkinsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				B2D227F01F6C555C003A6D67 /* AppDelegate.swift */,
-				B2D227F21F6C555C003A6D67 /* ViewController.swift */,
-				B2D227F41F6C555C003A6D67 /* Main.storyboard */,
-				B2D227F71F6C555C003A6D67 /* Assets.xcassets */,
-				B2D227F91F6C555C003A6D67 /* LaunchScreen.storyboard */,
-				B2D227FC1F6C555C003A6D67 /* Info.plist */,
+				B29B48082210EB8D000060C0 /* AppDelegate */,
+				B29B48092210EB94000060C0 /* ViewControllers */,
+				B29B48072210EB7B000060C0 /* SupportingFiles */,
 			);
 			path = JenkinsDemo;
 			sourceTree = "<group>";

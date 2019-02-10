@@ -1,11 +1,3 @@
-//
-//  JenkinsDemoUITests.swift
-//  JenkinsDemoUITests
-//
-//  Created by Matt Glover on 15/09/2017.
-//  Copyright © 2017 Matt Glover. All rights reserved.
-//
-
 import XCTest
 
 class JenkinsDemoUITests: XCTestCase {

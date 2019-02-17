@@ -159,6 +159,7 @@
 				B2D227E91F6C555C003A6D67 /* Sources */,
 				B2D227EA1F6C555C003A6D67 /* Frameworks */,
 				B2D227EB1F6C555C003A6D67 /* Resources */,
+				B2A07A772219D47D00EE7184 /* Update Build Number */,
 			);
 			buildRules = (
 			);
@@ -283,6 +284,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B2A07A772219D47D00EE7184 /* Update Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Update Build Number";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#\n# Set the build number to the current git commit count.\n# If we're on any branch but master, then we'll suffix the build\n# number with the current branch name, to make collisions\n# far less likely across feature branches.\n# Based on: http://w3facility.info/question/how-do-i-force-xcode-to-rebuild-the-info-plist-file-in-my-project-every-time-i-build-the-project/\n#\ngit=`sh /etc/profile; which git`\nappBuild=`\"$git\" rev-list --all |wc -l`\nbranchName=`\"$git\" rev-parse --abbrev-ref HEAD`\n\n#if [ $branchName = \"master\" ]; then\necho \"Updating CFBundleVersion to :$appBuild\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\n#else\n#echo \"Updating CFBundleVersion to :$appBuild-$branchName\"\n#/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild-$branchName\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n#/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild-$branchName\" \"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\n#fi\n\n/usr/bin/plutil -convert binary1 \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\necho \"Updated ${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n\n/usr/bin/plutil -convert binary1 \"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\necho \"Updated ${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B2D227E91F6C555C003A6D67 /* Sources */ = {

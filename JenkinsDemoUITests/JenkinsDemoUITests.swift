@@ -21,8 +21,35 @@ class JenkinsDemoUITests: XCTestCase {
     }
     
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let toolbar = XCUIApplication().toolbars["Toolbar"]
+        let changeToMgButton = toolbar.buttons["Change to MG"]
+        let changeToJdButton = toolbar.buttons["Change to JD"]
+        let titleLabel = XCUIApplication().staticTexts["titleLabel"]
+        
+        changeToMgButton.tap()
+        XCTAssertEqual(titleLabel.value as! String, "Matt Glover")
+        changeToJdButton.tap()
+        XCTAssertEqual(titleLabel.value as! String, "JenkinsDemo")
+        changeToMgButton.tap()
+        XCTAssertEqual(titleLabel.value as! String, "Matt Glover")
+        changeToJdButton.tap()
+        XCTAssertEqual(titleLabel.value as! String, "JenkinsDemo")
+        changeToMgButton.tap()
+        XCTAssertEqual(titleLabel.value as! String, "Matt Glover")
+        changeToJdButton.tap()
+        XCTAssertEqual(titleLabel.value as! String, "JenkinsDemo")
+        changeToMgButton.tap()
+        XCTAssertEqual(titleLabel.value as! String, "Matt Glover")
+        changeToJdButton.tap()
+        XCTAssertEqual(titleLabel.value as! String, "JenkinsDemo")
+        changeToMgButton.tap()
+        XCTAssertEqual(titleLabel.value as! String, "Matt Glover")
+        changeToJdButton.tap()
+        XCTAssertEqual(titleLabel.value as! String, "JenkinsDemo")
+        changeToMgButton.tap()
+        XCTAssertEqual(titleLabel.value as! String, "Matt Glover")
+        changeToJdButton.tap()
+        XCTAssertEqual(titleLabel.value as! String, "JenkinsDemo")
     }
-    
 }

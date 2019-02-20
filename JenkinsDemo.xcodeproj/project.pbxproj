@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2C27DDB221CA492009D1064 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C27DDA221CA492009D1064 /* ProfileViewController.swift */; };
+		B2C27DDD221CAD37009D1064 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C27DDC221CAD37009D1064 /* SettingsViewController.swift */; };
 		B2D227F11F6C555C003A6D67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D227F01F6C555C003A6D67 /* AppDelegate.swift */; };
-		B2D227F31F6C555C003A6D67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D227F21F6C555C003A6D67 /* ViewController.swift */; };
+		B2D227F31F6C555C003A6D67 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D227F21F6C555C003A6D67 /* HomeViewController.swift */; };
 		B2D227F61F6C555C003A6D67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D227F41F6C555C003A6D67 /* Main.storyboard */; };
 		B2D227F81F6C555C003A6D67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2D227F71F6C555C003A6D67 /* Assets.xcassets */; };
 		B2D227FB1F6C555C003A6D67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D227F91F6C555C003A6D67 /* LaunchScreen.storyboard */; };
@@ -34,9 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B2C27DDA221CA492009D1064 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B2C27DDC221CAD37009D1064 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B2D227ED1F6C555C003A6D67 /* JenkinsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JenkinsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D227F01F6C555C003A6D67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B2D227F21F6C555C003A6D67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B2D227F21F6C555C003A6D67 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B2D227F51F6C555C003A6D67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2D227F71F6C555C003A6D67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2D227FA1F6C555C003A6D67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -96,7 +100,9 @@
 		B29B48092210EB94000060C0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				B2D227F21F6C555C003A6D67 /* ViewController.swift */,
+				B2D227F21F6C555C003A6D67 /* HomeViewController.swift */,
+				B2C27DDA221CA492009D1064 /* ProfileViewController.swift */,
+				B2C27DDC221CAD37009D1064 /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -218,20 +224,17 @@
 				TargetAttributes = {
 					B2D227EC1F6C555C003A6D67 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = XR88US5DG4;
 						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 					B2D228001F6C555C003A6D67 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = XR88US5DG4;
 						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						TestTargetID = B2D227EC1F6C555C003A6D67;
 					};
 					B2D2280B1F6C555C003A6D67 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = XR88US5DG4;
 						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						TestTargetID = B2D227EC1F6C555C003A6D67;
@@ -311,8 +314,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2D227F31F6C555C003A6D67 /* ViewController.swift in Sources */,
+				B2C27DDB221CA492009D1064 /* ProfileViewController.swift in Sources */,
+				B2D227F31F6C555C003A6D67 /* HomeViewController.swift in Sources */,
 				B2D227F11F6C555C003A6D67 /* AppDelegate.swift in Sources */,
+				B2C27DDD221CAD37009D1064 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,11 +489,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XR88US5DG4;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = JenkinsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.duchysoftware.JenkinsDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duchysoftware.jenkinsdemo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.2;
 			};
@@ -498,11 +507,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XR88US5DG4;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = JenkinsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.duchysoftware.JenkinsDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duchysoftware.jenkinsdemo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.2;
 			};
@@ -513,11 +526,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = XR88US5DG4;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = JenkinsDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.duchysoftware.JenkinsDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JenkinsDemo.app/JenkinsDemo";
@@ -529,11 +545,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = XR88US5DG4;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = JenkinsDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.duchysoftware.JenkinsDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JenkinsDemo.app/JenkinsDemo";
@@ -544,11 +563,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = XR88US5DG4;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = JenkinsDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.duchysoftware.JenkinsDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = JenkinsDemo;
@@ -559,11 +581,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = XR88US5DG4;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = JenkinsDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.duchysoftware.JenkinsDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = JenkinsDemo;

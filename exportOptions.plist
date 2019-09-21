@@ -2,18 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>compileBitcode</key>
+    <true/>
+    <key>destination</key>
+    <string>export</string>
     <key>method</key>
     <string>development</string>
     <key>teamID</key>
-    <string>XR88US5DG4</string>
-    <key>manifest</key>
-    <dict>
-        <key>appURL</key>
-        <string>https://www.github.com/mattglover/JenkinsDemo.ipa</string>
-        <key>displayImageURL</key>
-        <string>https://www.github.com/mattglover/thumbnail.png</string>
-        <key>fullSizeImageURL</key>
-        <string>https://www.github.com/mattglover/image.png</string>
-    </dict>
+    <string>ZPM2H2GDXG</string>
+    <key>provisioningProfiles</key>
+	<dict>
+		<key>com.duchysoftware.jenkinsdemo2</key>
+		<string>JenkinsDemo2-Debug</string>
+	</dict>
 </dict>
 </plist>

@@ -238,8 +238,8 @@
 					B2D2280B1F6C555C003A6D67 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = ZPM2H2GDXG;
-						LastSwiftMigration = 1010;
-						ProvisioningStyle = Automatic;
+						LastSwiftMigration = 1100;
+						ProvisioningStyle = Manual;
 						TestTargetID = B2D227EC1F6C555C003A6D67;
 					};
 				};
@@ -567,15 +567,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = ZPM2H2GDXG;
 				INFOPLIST_FILE = JenkinsDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.duchysoftware.jenkinsdemo2UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "JenkinsDemo2UITests-Debug";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = JenkinsDemo;
 			};
 			name = Debug;
@@ -585,15 +586,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = ZPM2H2GDXG;
 				INFOPLIST_FILE = JenkinsDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.duchysoftware.jenkinsdemo2UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "JenkinsDemo2UITests-Debug";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = JenkinsDemo;
 			};
 			name = Release;

@@ -13,6 +13,10 @@ jobs:
       - name: Unit Test
         run: |
           xcodebuild -project JenkinsDemo.xcodeproj -scheme JenkinsDemo -destination "${destination}" CODE_SIGN_IDENTITY="" clean test
+        env: 
+         destination: ${{ matrix.destination }}
+      - name: UI Automation
+        run: |
           xcodebuild -project JenkinsDemo.xcodeproj -scheme JenkinsDemo-UITests -destination "${destination}" CODE_SIGN_IDENTITY="" clean test
         env: 
          destination: ${{ matrix.destination }}

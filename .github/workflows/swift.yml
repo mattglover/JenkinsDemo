@@ -10,4 +10,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Unit Test
-      run: xcodebuild -project JenkinsDemo/JenkinsDemo.xcodeproj -scheme JenkinsDemo -sdk iphonesimulator13.0 clean test
+      run: xcodebuild -project JenkinsDemo/JenkinsDemo.xcodeproj -scheme JenkinsDemo clean test

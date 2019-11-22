@@ -1,13 +1,18 @@
-name: Swift
-
 on: [push]
-
+name: JenkinsDemo
 jobs:
-  build:
-
+  test:
+    name: Test
     runs-on: macOS-latest
-
+    strategy:
+        matrix:
+          destination: ['platform=iOS Simulator,OS=12.2,name=iPhone X']
     steps:
-    - uses: actions/checkout@v1
-    - name: Unit Test
-      run: xcodebuild -project JenkinsDemo.xcodeproj -scheme JenkinsDemo clean test
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Unit Test
+        run: |
+          cd JenkinsDemo
+          xcodebuild -project JenkinsDemo.xcodeproj -scheme JenkinsDemo -destination "${destination}" CODE_SIGN_IDENTITY="" clean test
+        env: 
+         destination: ${{ matrix.destination }}

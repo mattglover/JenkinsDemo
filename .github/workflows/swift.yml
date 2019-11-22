@@ -15,4 +15,4 @@ jobs:
           xcodebuild -project JenkinsDemo.xcodeproj -scheme JenkinsDemo -destination "${destination}" CODE_SIGN_IDENTITY="" clean test
           xcodebuild -project JenkinsDemo.xcodeproj -scheme JenkinsDemo-UITests -destination "${destination}" CODE_SIGN_IDENTITY="" clean test
         env: 
-         destination: ${{ matrix.destination }
+         destination: ${{ matrix.destination }}
